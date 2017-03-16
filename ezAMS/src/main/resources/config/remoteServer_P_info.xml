@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteServer>
+	<server category="1">
+		<toolName>PANTHEON</toolName>
+		<groupName>LocalHost</groupName>
+		<serverIp>LocalHost</serverIp>
+		<serverId>administrator</serverId>
+		<serverPassWd>adjkasdklasdjkl</serverPassWd>
+		<serverCheckInfo>Ip⊥HostName⊥Cpu⊥Memory⊥Disk</serverCheckInfo>
+		<runProcess>KakaoTalk⊥Gersang</runProcess>
+		<runProcessCnt>1⊥2</runProcessCnt>
+		<failoverConfigFlag>N</failoverConfigFlag>
+		<localDiskCnt>2</localDiskCnt>
+		<networkDiskCnt>0</networkDiskCnt>
+	</server>
+</RemoteServer>
+

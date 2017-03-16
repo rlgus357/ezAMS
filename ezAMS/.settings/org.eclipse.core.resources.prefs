@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/cspi/ezams/batch/dao/impl/BatchDaoImpl.java=UTF-8
+encoding//src/main/java/com/cspi/ezams/batch/service/impl/RemoteShellThreadRun.java=UTF-8
+encoding//src/main/java/com/cspi/ezams/common/dao/impl/CommonDAOImpl.java=UTF-8
+encoding//src/main/java/com/cspi/ezams/common/service/impl/CommonServiceImpl.java=UTF-8
+encoding//src/main/java/com/cspi/ezams/common/web/CommonController.java=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/serverInfoList.jsp=UTF-8

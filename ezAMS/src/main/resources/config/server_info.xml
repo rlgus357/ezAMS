@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<server>
+		<configPath>/config/remoteServer_P_info.xml</configPath>
+		<fileDB>D:\dev\workspace\ezAMS\src\main\resources\fileDB\</fileDB>
+		<remoteIp>12.54.13.159</remoteIp>
+		<threadCnt>10</threadCnt>
+		<threadTimeout>1000</threadTimeout> <!--단위는 초단위 -->
+		<diskUseAmountOfSpot>95</diskUseAmountOfSpot>
+		<diskUseAmountOfMarsprimeDB>95</diskUseAmountOfMarsprimeDB>
+		<diskUseAmountOfMarsprimeAP>95</diskUseAmountOfMarsprimeAP>
+		<diskUseAmountOfPantheon>95</diskUseAmountOfPantheon>
+		<diskUseAmountOfSequs>95</diskUseAmountOfSequs>
+		<taskSlowBackUpPath>C:\Windows\System32\task\</taskSlowBackUpPath>
+		<slowBackUpPath>D:\ProgramData\MySQL Server 5.6\data\</slowBackUpPath>
+		<processDownTimeout>60</processDownTimeout>
+		<rebootTimeout>30</rebootTimeout>
+		<failoverTimeout>60</failoverTimeout>
+	</server>
+</configs>
