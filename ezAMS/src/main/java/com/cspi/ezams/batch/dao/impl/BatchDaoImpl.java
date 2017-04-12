@@ -302,7 +302,7 @@ public class BatchDaoImpl implements BatchDao {
 					previousResult = JSONArray.fromObject(strBuf.toString());
 					historyFis.close();
 				}
-
+ 
 				JSONArray nowResult = JSONArray.fromObject(historyObjList);
 
 				if (previousResult.toString().length() > 5) {
