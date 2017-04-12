@@ -1,5 +1,7 @@
 package com.cspi.ezams.batch.vo;
 
+import java.util.Arrays;
+
 public class ServerInfoResultVo {
 
 	private String ipInfo;
@@ -223,4 +225,19 @@ public class ServerInfoResultVo {
 		this.diskConfigCnt = diskConfigCnt;
 	}
 
+	@Override
+	public String toString() {
+		return "ServerInfoResultVo [ipInfo=" + ipInfo + ", hostInfo=" + hostInfo + ", cpuInfo=" + cpuInfo
+				+ ", memoryInfo=" + memoryInfo + ", diskInfo=" + diskInfo + ", arrLogicalDiskInfo="
+				+ Arrays.toString(arrLogicalDiskInfo) + ", arrNetWorkDiskInfo=" + Arrays.toString(arrNetWorkDiskInfo)
+				+ ", runProcess=" + runProcess + ", lastBootUpTime=" + lastBootUpTime + ", runProcessDownFlag="
+				+ runProcessDownFlag + ", failoverFlag=" + failoverFlag + ", localDiskCntFlag=" + localDiskCntFlag
+				+ ", networkDiskCntFlag=" + networkDiskCntFlag + ", localDiskCnt=" + localDiskCnt + ", networkDiskCnt="
+				+ networkDiskCnt + ", diskConfigCnt=" + diskConfigCnt + ", slowBackUp=" + slowBackUp + ", pingState="
+				+ pingState + ", iOWriteOperationsPersec=" + iOWriteOperationsPersec + ", pageFaultsPerSec="
+				+ pageFaultsPerSec + ", serverCategory=" + serverCategory + ", groupName=" + groupName + ", toolName="
+				+ toolName + ", occuredTime=" + occuredTime + "]";
+	}
+
+	
 }

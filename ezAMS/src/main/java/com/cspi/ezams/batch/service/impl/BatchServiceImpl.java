@@ -227,7 +227,7 @@ public class BatchServiceImpl implements BatchService {
 		 * 여기까지 쓰레드 아래부턴 쓰레드 결과 값 쓰레드 이므로 순서대로 같이 나오진 않는다.
 		 **/
 
-		List<ServerInfoResultVo> ServerInfoResultList = new ArrayList<ServerInfoResultVo>();
+		List<ServerInfoResultVo> serverInfoResultList = new ArrayList<ServerInfoResultVo>();
 		String strResult = null;
 		 
 		
@@ -605,10 +605,11 @@ public class BatchServiceImpl implements BatchService {
 			serverInfoResultVo.setPageFaultsPerSec(arrResult[15].replaceAll("⊥", ""));
 			// [//2016.10.29]
 
-			ServerInfoResultList.add(serverInfoResultVo);
+			serverInfoResultList.add(serverInfoResultVo);
 		}
-
-		boolean rtn = batchDao.insertFileDb(filePath, tempPath, fileName, historyFileName, ServerInfoResultList);
+		
+		
+		boolean rtn = batchDao.insertFileDb(filePath, tempPath, fileName, historyFileName, serverInfoResultList);
 
 		long time4 = System.currentTimeMillis();
 		String parsingEndTime = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a").format(new Date());

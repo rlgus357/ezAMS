@@ -40,7 +40,7 @@ public class BatchDaoImpl implements BatchDao {
 		if (serverInfoResultList != null) {
 			resultCnt = serverInfoResultList.size();
 		}
-
+		
 		for (int i = 0; resultCnt > 0 && i < resultCnt; i++) {
 
 			String alarm = "";
@@ -55,8 +55,7 @@ public class BatchDaoImpl implements BatchDao {
 			String strDiskInfo = "";
 			int arrLCnt = serverInfoResultList.get(i).getArrLogicalDiskInfo().length;
 
-			strDiskInfo = strDiskInfo
-					+ "<table width='100%' border='0' cellpadding='5' cellspacing='1' align='center' style='border:0px gray solid;'>";
+			strDiskInfo = strDiskInfo + "<table width='100%' border='0' cellpadding='5' cellspacing='1' align='center' style='border:0px gray solid;'>";
 			strDiskInfo = strDiskInfo + "<tr>";
 			strDiskInfo = strDiskInfo + "   <td style='border:0px gray solid;'><b>DiskDrive</b></td>";
 			strDiskInfo = strDiskInfo + "   <td style='border:0px gray solid;'><b>Size</b></td>";
@@ -219,7 +218,7 @@ public class BatchDaoImpl implements BatchDao {
 			} else {
 				obj.put("diskInfo", strDiskInfo);
 			}
-
+			
 			obj.put("no", Integer.parseInt(serverInfoResultList.get(i).getServerCategory()));
 			obj.put("toolName", serverInfoResultList.get(i).getToolName());
 			obj.put("hostName", serverInfoResultList.get(i).getGroupName() + "<br>("+ serverInfoResultList.get(i).getHostInfo() + ")");
@@ -234,7 +233,6 @@ public class BatchDaoImpl implements BatchDao {
 			obj.put("iOWriteOperationsPersec", serverInfoResultList.get(i).getiOWriteOperationsPersec());
 			obj.put("pageFaultsPerSec", serverInfoResultList.get(i).getPageFaultsPerSec());
 			// }
-			
 			alarmSlowQuerystat = serverInfoResultList.get(i).getSlowBackUp().indexOf("#");
 			alarmProcess = serverInfoResultList.get(i).getRunProcess().indexOf("#");
 			alarmPingState = serverInfoResultList.get(i).getPingState().indexOf("#");
@@ -257,10 +255,11 @@ public class BatchDaoImpl implements BatchDao {
 				alarm = "N";
 			}
 			obj.put("alarm", alarm);
-
+			
 			if (obj.get("alarm").equals("A")) {
 				historyObjList.add(obj);
 			}
+			
 			objlist.add(obj);
 		}
 

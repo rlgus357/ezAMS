@@ -93,7 +93,7 @@ var diskAlarm = document.getElementsByName ('DiskAlarm');
 
 var ProcessUpCntFlag = document.getElementsByName ('ProcessUpCntFlag');
    for ( var i = 0; i < ProcessUpCntFlag.length; i++){
-    ProcessUpCntFlag[i].style.color = (diskAlarm[i].style.color == "" ? "blue" : "");
+    ProcessUpCntFlag[i].style.color = (ProcessUpCntFlag[i].style.color == "" ? "blue" : "");
     }
 
 var ProcessDownCntFlag = document.getElementsByName ('ProcessDownCntFlag');
@@ -439,7 +439,7 @@ body {
 	<div id="alarmSound"></div>
 	<table border='0' width="100%">
 		<tr>
-			<td width='10px'><img width='10px' height='10px' id='ezAMS' align="left" src="<%=appPath%>/css/image/ezams.png" /></td>
+			<td width='10px'><img width='10px' height='10px' id='ezAMS' align="left" src="<%=appPath%>/css/image/TestLogo.png" /></td>
 			<td align="left" width="200px"><input type="text" size="12" id="searchDate" name="searchDate" style='position: relative; z-index: 100000;'></td>
 			<td align="left" width="130px" style="font-size: 21px"><select id="selectTime"></select></td>
 			<td width="100px" align="right"><input type="button" size="12" id="search" value="Search" onclick="fn_search();"></td>
