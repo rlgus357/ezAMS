@@ -54,7 +54,6 @@ public class BatchServiceImpl implements BatchService {
 
 		String tmpDate = format.format(date);
 		String tmpHour = formatHour.format(date);
-
 		String filePath = configuration.getString("server.fileDB") + "\\" + tmpDate;
 		String tempPath = configuration.getString("server.fileDB") + "\\" + tmpDate + "\\temp";
 		String fileName = tmpHour + ".json";

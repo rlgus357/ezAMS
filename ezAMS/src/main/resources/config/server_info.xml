@@ -3,6 +3,8 @@
 	<server>
 		<configPath>/config/remoteServer_P_info.xml</configPath>
 		<fileDB>C:\Users\lkh\git\ezAMS\ezAMS\src\main\resources\fileDB\</fileDB>
+		<testDB>/fileDB/</testDB>
+		
 		<remoteIp>12.54.13.159</remoteIp>
 		<threadCnt>10</threadCnt>
 		<threadTimeout>1000</threadTimeout> <!--단위는 초단위 -->
